@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - StudyPlanner</title>
+</head>
+<body>
+    <h1>StudyPlanner</h1>
+    <h2>Login</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Log in</button>
+    </form>
+</body>
+</html>
