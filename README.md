@@ -109,22 +109,24 @@ included in the project.
 
 Screenshots can be found in the `screenshots/` directory.
 
-### 6. Create a User Account
+### 6. Create a Test User
 
-To create a new administrator account, run:
+To create a normal user account for testing the application, run:
 
-```bash
-python manage.py createsuperuser
-```
+    python manage.py shell
 
-Django will ask you to enter:
+Then execute:
 
-- **Username:** The username used to log in.
-- **Email address:** The user's email address (optional).
-- **Password:** The account password.
-- **Password confirmation:** Repeat the password.
+    from django.contrib.auth.models import User
 
-Once the account has been created, you can log in to the application using your username and password. 
+    User.objects.create_user(
+        username="bob",
+        password="secret123"
+    )
+
+You can now log in to StudyPlanner using:
+- **Username:** bob
+- **Password:** secret123
 
 
 
