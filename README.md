@@ -109,3 +109,22 @@ included in the project.
 
 Screenshots can be found in the `screenshots/` directory.
 
+### 6. Create a User Account
+
+To create a new administrator account, run:
+
+```bash
+python manage.py createsuperuser
+```
+
+Django will ask you to enter:
+
+- **Username:** The username used to log in.
+- **Email address:** The user's email address (optional).
+- **Password:** The account password.
+- **Password confirmation:** Repeat the password.
+
+Once the account has been created, you can log in to the application using your username and password. 
+
+
+
