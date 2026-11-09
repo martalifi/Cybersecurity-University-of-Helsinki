@@ -27,33 +27,58 @@ is demonstrated and a corresponding fix is included in the code.
 -   HTML
 -   python-dotenv
 
-## 3. Installation
+### 3. Installation
 
-Clone the repository:
+**Clone the repository:**
 
-``` bash
+```bash
 git clone https://github.com/martalifi/Cybersecurity-University-of-Helsinki.git
 cd Cybersecurity-University-of-Helsinki
 ```
 
-Install the required dependencies:
+**Create and activate a virtual environment:**
 
-``` bash
+```bash
+python -m venv venv
+```
+
+On Linux/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+On Windows (PowerShell):
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Install the required dependencies:**
+
+```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the root directory and define the Django secret
-key:
+**Create a `.env` file in the root directory and define the Django secret key:**
 
-``` env
+```text
 DJANGO_SECRET_KEY=your-secret-key
 ```
 
-Apply the database migrations:
+**Apply the database migrations:**
 
-``` bash
+```bash
 python manage.py migrate
 ```
+
+**Run the application:**
+
+```bash
+python manage.py runserver
+```
+
+Open your browser and visit `http://127.0.0.1:8000/`.
 
 ## 4. Running the Application
 
