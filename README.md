@@ -66,23 +66,8 @@ Open your browser and visit:
 
 http://127.0.0.1:8000/
 
-## 5. Test Users
 
-The application uses the following test accounts:
-
-  Username   Password
-  ---------- -------------
-  alice      redqueen
-  bob        squarepants
-
-These accounts are provided to demonstrate the security vulnerabilities,
-particularly Broken Access Control and SQL Injection.
-
-**Note:** The database is not included in the repository. The test users
-and their exam data must be created before reproducing the
-demonstrations.
-
-## 6. Security Vulnerabilities
+## 5. Security Vulnerabilities
 
 The project demonstrates five categories from the OWASP Top 10 (2021):
 
@@ -98,8 +83,3 @@ included in the project.
 
 Screenshots can be found in the `screenshots/` directory.
 
-## 7. Important Note
-
-This application contains intentionally introduced security
-vulnerabilities for educational purposes. It is not intended for
-production use or deployment on a public server.
