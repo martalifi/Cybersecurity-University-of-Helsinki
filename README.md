@@ -1,4 +1,5 @@
 # StudyPlanner -- Cybersecurity Project
+Coursework for the University of Helsinki course "Introduction to Cyber Security: MOOC 2026" (TKT200094).
 
 ## 1. Project Description
 
